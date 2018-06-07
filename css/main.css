@@ -97,13 +97,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* *, *::after, *::before {
+    box-sizing: border-box !important;
+} */
 
+.icons-bg:hover {
+    background: rgb(149, 165, 221);
+}
 
+#navBar {
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    overflow: auto;
+}
 
+.logo-ft {
+    position: absolute;
+    top: -4px;
+    right: 0;
+}
 
+#collapseBlock {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(12, 14, 32);
+    opacity: 0.9;
+    z-index: 999999999999;
+    top: 0;
+    box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.3);
+    display: none;
+}
 
-
-
+#closeBtn {
+    overflow: auto;
+    padding: 10px;
+}
 
 
 
@@ -123,6 +153,26 @@ textarea {
 
 .hidden {
     display: none !important;
+}
+
+.icons-bg, .iconx-bg {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px;
+    background: rgb(33, 38, 87);
+    color: #eee;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.iconx-bg {
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    background: none;
+}
+.iconx-bg:hover {
+    color: #eee;
 }
 
 /*
