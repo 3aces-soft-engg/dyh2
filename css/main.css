@@ -135,14 +135,65 @@ textarea {
     padding: 10px;
 }
 
+#bookingContainer {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/flight_bg.jpg) center center / cover no-repeat fixed;
+    box-shadow: inset 0 0 10px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#bookingForm {
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    background: #fff;
+    /* padding: 20px 40px; */
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.1);
+    opacity: 0.9;
+}
 
+#bookingHead {
+    background: #e9e9e9;
+    /* padding: 30px 10px; */
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    box-shadow: inset 0 0 80px 1px rgba(0,0,0,0.1);
+    display: flex;
+    align-content: space-around;
+    font-size: 0.92rem;
+    font-weight: 900;
+}
 
+.itemOne {
+    display: inline-block;
+    width: 33.33%;
+    padding: 15px 10px;
+    text-align: center;
+}
 
+.itemOne.active {
+    background: #fff;
+}
 
+@media screen and (max-width: 1200px) {
+    #bookingForm {width: 80%;}
+}
+@media screen and (max-width: 500px) {
+    #bookingForm {
+        width: 95%;
+        font-size: 0.625rem;
+    }
+}
 
-
-
+#bookingForms {
+    padding: 20px 40px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
