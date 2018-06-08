@@ -138,17 +138,20 @@ textarea {
 #bookingContainer {
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url(../images/flight_bg.jpg) center center / cover no-repeat fixed;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    /* background: url(../images/flight_bg.jpg) center center / cover no-repeat fixed; */
+    background: linear-gradient(to right, #7758be, rgb(173, 185, 223));
     box-shadow: inset 0 0 10px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
 }
 
-#bookingForm {
-    width: 50%;
+#bookingForm {  
+    width: 30%;
     height: auto;
     overflow: auto;
     background: #fff;
@@ -158,7 +161,7 @@ textarea {
 }
 
 #bookingHead {
-    background: #e9e9e9;
+    background: linear-gradient(to right, cornflowerblue, rgb(105, 127, 199));
     /* padding: 30px 10px; */
     width: 100%;
     height: auto;
@@ -182,12 +185,18 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-    #bookingForm {width: 80%;}
+    #bookingForm {width: 50%;}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #bookingForm {
-        width: 95%;
+        width: 100%;
         font-size: 0.625rem;
+    }
+    #bookingContainer {
+        padding: 10px 5px;
+    }
+    #bookingHead {
+        font-size: 0.82rem;
     }
 }
 

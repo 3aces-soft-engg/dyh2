@@ -17,6 +17,30 @@
         * {
             box-sizing: border-box !important;
         }
+        input, select {
+            padding: 12px 10px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid beige;
+            /* border-radius: 10px; */
+        }
+        select {
+            background: cornflowerblue;
+            color: #fff;
+        }
+        label {
+            padding: 10px 20px;
+            font-weight: bold;
+            background: linear-gradient(to right, cornflowerblue, rgb(105, 127, 199));
+            color: white;
+            font-style: oblique;
+        }
+        input[type="submit"] {
+            background: linear-gradient(to right, cornflowerblue, rgb(105, 127, 199));
+            color: #fff;
+            font-style: oblique;
+            font-weight: bold;
+            padding: 10px 40px;
+        }
     </style>
 </head>
 
@@ -31,19 +55,28 @@
             </div>
             <div id="bookingForms">
                 <form>
-                    From: <input type="text" id="from" name="from">
-                    To: <input type="text" id="to" name="to"><br><br>
-                    Depart: <input type="date" id="depart" name="depart">
-                    Return: <input  type="date" id="return" name="return"><br><br>
-                    Class:  <select>
+                    <label for="from">From</label>
+                     <input type="text" id="from" name="from"><br><br>
+                    <label for="to">To</label>
+                      <input type="text" id="to" name="to"><br><br>
+                    
+                      <label for="depart">Depart</label> <input type="date" id="depart" name="depart">
+                      <br><br><span class="oneWay">
+                        <label for="return">
+                            Return
+                        </label>
+                        <input type="date" id="return" name="return">
+                    </span><br><br>
+                    <label for="class">Class</label>
+                      <select id="class" name="class">
                             <option value="Economy">Economy</option>
                             <option value="First Class">First Class</option>
                             <option value="Premium Economy">Premium Economy</option>
                             <option value="Business Class">Business Class</option>
-                          </select><br> <br>
-                    Adult: 
-                          <input type="number" value="0" id="adult" name="adult">
-                    Children: 
+                        </select><br> <br>
+                        <label for="adult">Adult</label> 
+                          <input type="number" value="0" id="adult" name="adult"><br><br>
+                          <label for="child">Child</label>
                           <input type="number" value="0" id="child" name="child"><br><br>
                     <input type="submit" value="submit">
                 </form>
@@ -64,13 +97,16 @@
         crossorigin="anonymous"></script>
     <script>
         var item = document.getElementsByClassName('itemOne');
+        var oneWay = document.getElementsByClassName('oneWay')[0];
         document.addEventListener("click", function (event) {
             if(event.target.innerHTML == 'Round Trip') {
                 item[0].classList.add('active');
+                oneWay.style.display = "inline-block";
                 item[1].classList.remove('active');
                 item[2].classList.remove('active');
             } else if(event.target.innerHTML == 'One Way') {
                 item[1].classList.add('active');
+                oneWay.style.display = "none";
                 item[0].classList.remove('active');
                 item[2].classList.remove('active');
             } else if(event.target.innerHTML == 'Multi City') {
