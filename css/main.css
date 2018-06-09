@@ -192,7 +192,7 @@ textarea {
         width: 100%;
         font-size: 0.625rem;
     }
-    #bookingContainer {
+    #bookingContainer, #bookingContainerVisa {
         padding: 10px 5px;
     }
     #bookingHead {
@@ -203,6 +203,25 @@ textarea {
 #bookingForms {
     padding: 20px 40px;
 }
+
+#closeBtn {
+    overflow: auto;
+}
+
+
+
+
+/* Slider Starts */
+.gallerySection {
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+    background: url(../images/slide1.jpg) center center / cover no-repeat fixed;
+    /* background: linear-gradient(to right, rgb(22, 9, 66), rgb(105, 127, 199)); */
+    box-shadow: inset 0 0 10px 4px rgba(0,0,0,0.1);
+}
+
+/* Slider Ends */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -224,6 +243,9 @@ textarea {
     box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
     cursor: pointer;
 }
+.icons-bg {
+    margin-top: 3px;
+}
 
 .iconx-bg {
     position: absolute;
@@ -234,6 +256,8 @@ textarea {
 .iconx-bg:hover {
     color: #eee;
 }
+
+
 
 /*
  * Hide only visually, but have it available for screen readers:

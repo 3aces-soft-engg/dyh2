@@ -5,8 +5,14 @@ var flightBtn = document.getElementsByClassName('itemOne');
 
 menu_open[0].addEventListener("click", function () {
     popBlock.style.display = "block";
+    popBlock.classList.add('fadeInDown');
+    popBlock.classList.remove('fadeOutUp');
 });
 
 closeBtn.addEventListener("click", function () {
-    popBlock.style.display = "none";
+    popBlock.classList.remove('fadeInDown');
+    popBlock.classList.add('fadeOutUp');
+
 })
+
+
