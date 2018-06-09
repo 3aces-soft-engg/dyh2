@@ -141,8 +141,8 @@ textarea {
     width: 100%;
     height: 100%;
     padding: 30px;
-    /* background: url(../images/flight_bg.jpg) center center / cover no-repeat fixed; */
-    background: linear-gradient(to right, #7758be, rgb(173, 185, 223));
+    background: url(../images/flight_bg.jpg) center center / cover no-repeat fixed;
+    /* background: linear-gradient(to right, #7758be, rgb(173, 185, 223)); */
     box-shadow: inset 0 0 10px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
@@ -151,7 +151,7 @@ textarea {
 }
 
 #bookingForm {  
-    width: 30%;
+    width: 32%;
     height: auto;
     overflow: auto;
     background: #fff;

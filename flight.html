@@ -34,12 +34,20 @@
             color: white;
             font-style: oblique;
         }
-        input[type="submit"] {
+        input[type="submit"], button {
             background: linear-gradient(to right, cornflowerblue, rgb(105, 127, 199));
             color: #fff;
             font-style: oblique;
             font-weight: bold;
             padding: 10px 40px;
+        }
+        button {
+            border: none;
+            padding: 10px 18px;
+            background: linear-gradient(to right, rgb(100, 232, 237), rgb(105, 127, 199));
+        }
+        #cityContainer {
+            display: none;
         }
     </style>
 </head>
@@ -59,6 +67,12 @@
                      <input type="text" id="from" name="from"><br><br>
                     <label for="to">To</label>
                       <input type="text" id="to" name="to"><br><br>
+                    <div id="cityContainer">
+                    <button value="Add City" id="cityBtn">Add City</button><br><br>
+                    <label for="from">From</label>
+                    <input type="text" id="from" name="from"><br><br>
+                   <label for="to">To</label>
+                     <input type="text" id="to" name="to"><br><br></div>
                     
                       <label for="depart">Depart</label> <input type="date" id="depart" name="depart">
                       <br><br><span class="oneWay">
@@ -98,23 +112,39 @@
     <script>
         var item = document.getElementsByClassName('itemOne');
         var oneWay = document.getElementsByClassName('oneWay')[0];
+        var addCity = document.getElementById('cityContainer');
+        var cityBtn = document.getElementById('cityBtn');
+        var cityCode = '<label for="from">From</label>'+
+                    '<input type="text" id="from" name="from"><br><br>'+
+                   '<label for="to">To</label>'+
+                     '<input type="text" id="to" name="to"><br><br>';
         document.addEventListener("click", function (event) {
             if(event.target.innerHTML == 'Round Trip') {
                 item[0].classList.add('active');
                 oneWay.style.display = "inline-block";
+                addCity.style.display = "none";
                 item[1].classList.remove('active');
                 item[2].classList.remove('active');
             } else if(event.target.innerHTML == 'One Way') {
                 item[1].classList.add('active');
                 oneWay.style.display = "none";
+                addCity.style.display = "none";
                 item[0].classList.remove('active');
                 item[2].classList.remove('active');
             } else if(event.target.innerHTML == 'Multi City') {
                 item[2].classList.add('active');
+                addCity.style.display = "block";
                 item[0].classList.remove('active');
                 item[1].classList.remove('active');
             }
+
+            if(event.target.innerHTML == "Add City") {
+                event.preventDefault();
+                addCity.insertAdjacentHTML('beforeend', cityCode);
+            }
         })
+
+
     </script>
 </body>
 
