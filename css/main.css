@@ -199,6 +199,12 @@ textarea {
 @media screen and (max-width: 1200px) {
     #bookingForm {width: 50%;}
 }
+@media screen and (max-width: 800px) {
+    #bookingForm {width: 60%;}
+}
+@media screen and (max-width: 800px) {
+    #bookingForm {width: 70%;}
+}
 @media screen and (max-width: 600px) {
     #bookingForm {
         width: 100%;
