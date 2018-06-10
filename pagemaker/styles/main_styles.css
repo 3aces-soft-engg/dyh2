@@ -256,7 +256,7 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+	background: linear-gradient(to right, #657ad6, #312c7c, #272255);
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -1229,7 +1229,7 @@ section
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 27px;
-	background: #fa9e1c;
+	background: #4f488b;
 	border-radius: 14px;
 }
 .intro_button
@@ -1298,7 +1298,7 @@ section
 {
 	padding-top: 125px;
 	padding-bottom: 116px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #7980d8, #251e31);
 }
 .cta_background
 {
@@ -1570,7 +1570,7 @@ section
 	left: 41px;
 	width: 72px;
 	height: 72px;
-	background: #fa9e1b;
+	background: cornflowerblue;
 	border-radius: 50%;
 	overflow: hidden;
 }
