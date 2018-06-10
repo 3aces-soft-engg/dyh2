@@ -101,7 +101,7 @@ textarea {
     box-sizing: border-box !important;
 } */
 
-body {
+/* body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 2em;
@@ -110,7 +110,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
-}
+} */
 .icons-bg:hover {
     background: rgb(149, 165, 221);
 }
