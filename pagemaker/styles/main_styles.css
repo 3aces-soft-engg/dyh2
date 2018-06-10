@@ -1447,7 +1447,7 @@ section
 	bottom: 27px;
 	width: 180px;
 	height: 33px;
-	background: #fa9e1b;
+	background: #685677;
 	overflow: hidden;
 }
 .offer_name a
@@ -1469,7 +1469,7 @@ section
 	display: inline-block;
 	font-size: 36px;
 	font-weight: 700;
-	color: #eda84a;
+	color: #685677;
 	line-height: 25px;
 }
 .offers_price span
@@ -1728,13 +1728,13 @@ section
 }
 .trending_title a:hover
 {
-	color: #fa9e1b;
+	color: #7980d8;
 }
 .trending_price
 {
 	font-size: 14px;
 	font-weight: 700;
-	color: #fa9e1b;
+	color: #685677;
 	margin-top: 2px;
 }
 .trending_location
