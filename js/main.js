@@ -2,6 +2,7 @@ var menu_open = document.getElementsByClassName('menu-func');
 var popBlock = document.getElementById('collapseBlock');
 var closeBtn = document.getElementById('closeBtn');
 var flightBtn = document.getElementsByClassName('itemOne');
+var gallerySlide = document.getElementsByClassName('gallerySlide');
 
 menu_open[0].addEventListener("click", function () {
     popBlock.style.display = "block";
@@ -15,4 +16,29 @@ closeBtn.addEventListener("click", function () {
 
 })
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
