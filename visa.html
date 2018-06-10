@@ -53,7 +53,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            min-height: 100vh;
             padding: 30px;
             background: url(images/visa_bg.jpg) center center / cover no-repeat fixed;
             /* background: linear-gradient(to right, #7758be, rgb(173, 185, 223)); */
@@ -62,6 +62,7 @@
             justify-content: center;
             align-items: center;
             color: #333;
+            overflow: auto;
         }
         select#country, select#nation {
             display: block;
