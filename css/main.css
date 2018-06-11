@@ -153,14 +153,14 @@ textarea {
     top: calc(50% - 100px);
     height: auto;
     overflow: auto;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     text-align: center;
     box-sizing: border-box;
     border: 1px solid white;
     font-size: 32px;
 }
 .collapse_Menu a {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: #eee;
 }
 .collapse_Menu a:hover {
