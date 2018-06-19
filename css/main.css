@@ -129,7 +129,29 @@ textarea {
     right: 0;
 }
 
-#collapseBlock2 {
+.collapseMenuLeft {
+    position: fixed !important;
+    padding-top: 20px;
+    width: 300px;
+    height: 100%;
+    background: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    color: #fff !important;
+    text-align: center;
+    font-size: 1.42rem;
+    box-sizing: border-box;
+}
+
+.navItemLeft {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #999;
+}
+/* #collapseBlock2 {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -147,25 +169,26 @@ textarea {
 }
 
 .collapse_Menu {
-    position: absolute;
-    width: 50%;
-    left: calc(25% );
-    top: calc(50% - 100px);
+    display: inline-block;
+    width: 40%;
+    
     height: auto;
     overflow: auto;
     /* padding: 20px 40px; */
-    text-align: center;
+    /* text-align: center;
     box-sizing: border-box;
     border: 1px solid white;
     font-size: 32px;
-}
-.collapse_Menu a {
-    /* margin-top: 20px; */
+    box-sizing: border-box;
+} */
+/* .collapse_Menu a {
+    /* margin-top: 20px; 
     color: #eee;
 }
 .collapse_Menu a:hover {
     color: #b3d4fc;
-}
+} */
+
 
 #bookingContainer {
     top: 0;
@@ -255,7 +278,8 @@ textarea {
     max-height: 700px;
 }
 .carousel-item > img {
-    height: 700px;
+    max-height: 700px;
+    min
 }
 
 /* Slider Ends */

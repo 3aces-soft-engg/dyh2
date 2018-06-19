@@ -32,3 +32,7 @@ $('.cd-testimonials-wrapper').flexslider({
        });
     }
  });
+
+ $(window).load(function(){        
+    $('#myModal').modal('show');
+     }); 
